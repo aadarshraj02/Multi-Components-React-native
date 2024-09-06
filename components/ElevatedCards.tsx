@@ -5,7 +5,7 @@ const ElevatedCards = (): JSX.Element => {
   return (
     <View>
       <Text style={styles.headingText}>Elevated Cards</Text>
-      <ScrollView style={styles.container}>
+      <ScrollView horizontal={true} style={styles.container}>
         <View style={[styles.card, styles.cardElevated]}>
           <Text style={styles.cardText}>Scroll</Text>
         </View>
