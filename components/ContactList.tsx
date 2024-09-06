@@ -120,5 +120,6 @@ const styles = StyleSheet.create({
   },
   userStatus: {
     color: 'gray',
+    marginLeft: 8,
   },
 });
