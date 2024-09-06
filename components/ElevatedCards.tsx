@@ -1,10 +1,15 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-const ElevatedCards = () => {
+const ElevatedCards = (): JSX.Element => {
   return (
     <View>
       <Text style={styles.headingText}>Elevated Cards</Text>
+      <ScrollView>
+        <View>
+          <Text>TAP!</Text>
+        </View>
+      </ScrollView>
     </View>
   );
 };
