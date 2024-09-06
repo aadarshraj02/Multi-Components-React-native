@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-const ActionCard = () => {
+const ActionCard = (): JSX.Element => {
   return (
     <View>
       <Text>ActionCard</Text>
