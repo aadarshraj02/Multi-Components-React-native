@@ -26,7 +26,7 @@ const ActionCard = (): JSX.Element => {
             uri: 'https://www.filepicker.io/api/file/4C6yPDywSUeWYLyg1h9G',
           }}></Image>
         <View style={styles.bodyContainer}>
-          <Text numberOfLines={3}>
+          <Text style={styles.description} numberOfLines={3}>
             React Native is a popular open-source framework developed by
             Facebook for building mobile applications using JavaScript and
             React. It allows developers to create apps for both Android and iOS
@@ -40,7 +40,11 @@ const ActionCard = (): JSX.Element => {
         <View style={styles.footerContainer}>
           <TouchableOpacity
             onPress={() => openWebsite('https://github.com/aadarshraj02')}>
-            <Text style={styles.socialLink}>About Me...</Text>
+            <Text style={styles.socialLink}>About Me</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => openWebsite('https://github.com/aadarshraj02')}>
+            <Text style={styles.socialLink}>My Links</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -58,11 +62,12 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
   },
   card: {
-    height: 400,
+    height: 380,
     width: 350,
     borderRadius: 6,
     marginVertical: 12,
-    marginHorizontal: 16,
+    // marginHorizontal: 16,
+    marginHorizontal: 'auto',
   },
   elevatedCard: {
     backgroundColor: '#034b86',
@@ -80,11 +85,33 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  headerText: {},
+  headerText: {
+    color: '#dfc39a',
+    fontSize: 16,
+    fontWeight: '600',
+  },
   cardImage: {
     height: 200,
   },
-  bodyContainer: {},
-  footerContainer: {},
-  socialLink: {},
+  bodyContainer: {
+    padding: 10,
+  },
+  footerContainer: {
+    padding: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+  },
+  description: {
+    fontSize: 16,
+    marginTop: 8,
+  },
+  socialLink: {
+    fontSize: 14,
+    color: '#000',
+    backgroundColor: '#fafafa',
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 6,
+  },
 });
