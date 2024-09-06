@@ -7,7 +7,22 @@ const ElevatedCards = (): JSX.Element => {
       <Text style={styles.headingText}>Elevated Cards</Text>
       <ScrollView style={styles.container}>
         <View style={[styles.card, styles.cardElevated]}>
-          <Text style={styles.cardText}>TAP!</Text>
+          <Text style={styles.cardText}>Scroll</Text>
+        </View>
+        <View style={[styles.card, styles.cardElevated]}>
+          <Text style={styles.cardText}>Me</Text>
+        </View>
+        <View style={[styles.card, styles.cardElevated]}>
+          <Text style={styles.cardText}>To</Text>
+        </View>
+        <View style={[styles.card, styles.cardElevated]}>
+          <Text style={styles.cardText}>The</Text>
+        </View>
+        <View style={[styles.card, styles.cardElevated]}>
+          <Text style={styles.cardText}>End</Text>
+        </View>
+        <View style={[styles.card, styles.cardElevated]}>
+          <Text style={styles.cardText}>Ends!</Text>
         </View>
       </ScrollView>
     </View>
@@ -38,7 +53,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   cardElevated: {
-    backgroundColor:"#dadada"
+    backgroundColor: '#dadada',
   },
   cardText: {
     color: '#000',
