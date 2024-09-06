@@ -38,7 +38,8 @@ const ActionCard = (): JSX.Element => {
           </Text>
         </View>
         <View style={styles.footerContainer}>
-          <TouchableOpacity onPress={() => openWebsite('www.google.com')}>
+          <TouchableOpacity
+            onPress={() => openWebsite('https://github.com/aadarshraj02')}>
             <Text>About Me...</Text>
           </TouchableOpacity>
         </View>
